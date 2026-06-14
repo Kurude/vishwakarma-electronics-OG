@@ -481,6 +481,69 @@
       .hero-stats { grid-template-columns: repeat(2, 1fr); }
       .contact-action-btns { flex-direction: column; }
     }
+
+    /* ── MOBILE FRIENDLY ── */
+    @media (max-width: 640px) {
+      /* Hero */
+      .hero-inner { padding: 100px 16px 48px; }
+      .hero-content { max-width: 100%; }
+      .hero-h1 { font-size: 2rem; }
+      .hero-sub { font-size: 15px; }
+      .hero-btns { flex-direction: column; gap: 10px; }
+      .btn-primary, .btn-ghost { width: 100%; justify-content: center; padding: 14px 20px; }
+      .hero-rating { flex-direction: column; gap: 12px; }
+      .rating-box { width: 100%; }
+      .trust-row { gap: 12px; }
+      .hero-stats { grid-template-columns: repeat(2, 1fr); gap: 10px; margin-top: 32px; }
+
+      /* Sections */
+      .section { padding: 56px 0; }
+      .container { padding: 0 16px; }
+      .section-sub { font-size: 15px; }
+
+      /* About / Feature grid */
+      .features-grid { grid-template-columns: 1fr; gap: 16px; }
+
+      /* Products grid */
+      .products-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+      .product-img-wrap { height: 120px; }
+      .product-title { font-size: 13px; }
+      .product-desc { font-size: 12px; }
+
+      /* Why Us */
+      .why-grid { grid-template-columns: 1fr !important; gap: 16px; }
+
+      /* Reviews */
+      .reviews-grid { grid-template-columns: 1fr !important; gap: 16px; }
+      .testimonial-text { font-size: 14px; }
+
+      /* Contact */
+      .contact-grid { grid-template-columns: 1fr !important; gap: 24px; }
+      .contact-info-cards { grid-template-columns: 1fr !important; }
+      .contact-action-btns { flex-direction: column; }
+
+      /* Footer */
+      .footer-grid { grid-template-columns: 1fr !important; gap: 32px; }
+      .footer-inner { padding: 40px 16px 24px; }
+      .footer-bottom { flex-direction: column; gap: 8px; text-align: center; }
+
+      /* Info bar (address/phone row) */
+      .info-bar { flex-direction: column !important; gap: 0 !important; }
+      .info-item { border-right: none !important; border-bottom: 1px solid rgba(255,255,255,0.08); }
+      .info-item:last-child { border-bottom: none; }
+
+      /* Brands marquee */
+      .brand-card { padding: 12px 20px; }
+      .brand-name { font-size: 14px; }
+
+      /* Floating WhatsApp button */
+      .wa-fab span { display: none; }
+      .wa-fab { width: 52px; height: 52px; border-radius: 50%; padding: 0; justify-content: center; }
+      .wa-fab i { font-size: 22px; }
+
+      /* Navbar logo text size */
+      .logo-text { font-size: 15px; }
+    }
   </style>
 </head>
 <body>
